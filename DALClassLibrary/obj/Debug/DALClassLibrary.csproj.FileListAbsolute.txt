@@ -1,0 +1,14 @@
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DALClassLibrary.csprojAssemblyReference.cache
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DALClassLibrary.csproj.CoreCompileInputs.cache
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\DAL.dll.config
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\DAL.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\DAL.pdb
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\BusinessEntities.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\EntityFramework.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\BusinessEntities.pdb
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\EntityFramework.xml
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DALClassLibrary.csproj.CopyComplete
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DAL.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DAL.pdb

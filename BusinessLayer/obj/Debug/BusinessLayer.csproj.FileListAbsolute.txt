@@ -1,0 +1,17 @@
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\obj\Debug\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\obj\Debug\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\BusinessLayer.dll.config
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\BusinessLayer.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\BusinessLayer.pdb
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\EntityFramework.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\EntityFramework.xml
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\obj\Debug\BusinessLayer.csproj.CopyComplete
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\obj\Debug\BusinessLayer.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\obj\Debug\BusinessLayer.pdb
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\BusinessEntities.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\DAL.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\BusinessEntities.pdb
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\DAL.pdb
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessLayer\bin\Debug\DAL.dll.config
