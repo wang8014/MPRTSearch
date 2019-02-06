@@ -90,3 +90,9 @@ C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch\bin\ViewModel.pdb
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch\bin\DAL.pdb
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch\bin\DAL.dll.config
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch\bin\EntityFramework.xml
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch\bin\EntityFramework.SqlServer.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch\bin\EntityFramework.SqlServer.xml
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch\bin\PagedList.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch\bin\PagedList.xml
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch\bin\PagedList.Mvc.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch\bin\PagedList.Mvc.xml

@@ -35,13 +35,15 @@ C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\obj\Debug\MPRTSearch.
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\obj\Debug\MPRTSearch.Tests.pdb
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\ViewModel.dll
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\ViewModel.pdb
-C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\BusinessLayer.dll
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\BusinessEntities.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\BusinessEntities.pdb
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\BusinessLayer.dll
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\DAL.dll
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\EntityFramework.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\PagedList.dll
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\BusinessLayer.pdb
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\BusinessLayer.dll.config
-C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\BusinessEntities.pdb
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\DAL.pdb
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\DAL.dll.config
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\EntityFramework.xml
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\MPRTSearch.Tests\bin\Debug\PagedList.xml

@@ -19,8 +19,10 @@ namespace MPRTSearch.Areas.SPA.Controllers
             _mainViewModel = new MainViewModel();
             _mainViewModel.ApplicationName = "Unknown ApplicationName";
             _mainViewModel.FooterData = new FooterViewModel();
+
             _mainViewModel.FooterData.CompanyName = "ArkivIT";//Can be set to dynamic value
             _mainViewModel.FooterData.Year = DateTime.Now.Year.ToString();
+            ViewBag.mainViewModel = _mainViewModel;
         }
         public ActionResult GetFooter()
         {

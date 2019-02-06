@@ -15,20 +15,30 @@ namespace MPRTSearch.BusinessEntities
         public string SearchText {
             get {return _searchText; }
             set{ _searchText = value;
-                string[] strs = _searchText.Split(' ');
-                ListSearchText.Clear();
-                for(int i=0; i<strs.Length; i++)
-                {
-                    string x = strs[i].Trim();
-                    if (x.Length>0)
-                    {
-                        ListSearchText.Add(x);
-                    }
-                }
-            }
+                            }
                 
         }
-        public List<String> ListSearchText { get; }
+        public List<String> ListSearchText {
+            get { 
+                string[] strs = _searchText.Split(' ');
+                List<string> listSearchText = new List<string>(); 
+                for (int i = 0; i < strs.Length; i++)
+                {
+                    string x = strs[i].Trim();
+                    if (x.Length > 0)
+                    {
+                        listSearchText.Add(x);
+                    }
+                }
+                return listSearchText;
+            }
+        }
+        public Navigation navigation { get; set; }
+        public Search()
+        {
+            navigation = new Navigation();
+            
+        }
 
     }
     public class SearchTextValidation : ValidationAttribute

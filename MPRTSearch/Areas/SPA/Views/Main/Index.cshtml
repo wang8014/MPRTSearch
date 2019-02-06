@@ -1,43 +1,63 @@
-﻿
+﻿@model MPRTSearch.ViewModel.SPA.SearchResultViewModel 
+@*PagedList.IPagedList<MPRTSearch.ViewModel.SPA.SearchResultViewModel>*@
+@using PagedList.Mvc;
 @{
     ViewBag.Title = "Hemsida";
 }
 
-<script>
-$.validator.setDefaults({
-    submitHandler: function() {
-      alert("提交事件!");
-    }
-});
-$().ready(function() {
-    $("#commentForm").validate();
-});
-</script>
-<div class="jumbotron">
-    <p class="lead">
-        @{
-            Html.RenderAction("GetSearchInput");
-        }
-    </p>
-</div>
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
+    <div class="jumbotron">
+        <p class="lead">
+            @{
+                Html.RenderAction("GetSearchInput", Model.searchViewModel);
+            }
         </p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="row">
+        <div class="col-md-12">
+            <table>
+                <tr>
+                    <td>
+                        @if ((Model != null) && (Model.ListSearchDataSet != null))
+                        {
+                            <span style="height: 20px; line-height: 20px;">Total @Model.ListSearchDataSet.TotalItemCount.ToString() rekord，nuvarande @Model.ListSearchDataSet.PageNumber sida/total @Model.ListSearchDataSet.PageCount sidor </span>
+                            @Html.PagedListPager(Model.ListSearchDataSet, page => Url.Action("ExcuteNavigation", new { page, seaText = Model.searchViewModel.SearchText }), new PagedListRenderOptions() { LinkToFirstPageFormat = "Första sidan", LinkToNextPageFormat = "Nästa", LinkToPreviousPageFormat = "Föregående", LinkToLastPageFormat = "Sista", DisplayItemSliceAndTotal = false, MaximumPageNumbersToDisplay = 10 })
+                        }
+                    </td>
+                </tr>
+            </table>
+            <table id="ResultTable" name="ResultTable" class="table" style="word-break:break-all; word-wrap:break-word;">
+
+                @{
+                    if (Model.ListSearchDataSet != null)
+                    {
+                        for (int searchDataSetIndex = 0; searchDataSetIndex < Model.ListSearchDataSet.Count; searchDataSetIndex++)
+                        {
+                            <tr>
+                                <td class="col-xs-12" >
+                                    <h3><a class="btn-link" href="/SPA/Detail/Index/@Model.ListSearchDataSet[searchDataSetIndex].ID.ToString()?nm=@Model.GetRowId(Model.ListSearchDataSet.PageNumber,Model.ListSearchDataSet.PageSize,searchDataSetIndex)">kategori:&nbsp;@Model.GetTypeName(Model.ListSearchDataSet[searchDataSetIndex].TypeID)&nbsp;</a></h3>
+                                    <h4>
+                                        @(new HtmlString(Model.GetRowData(Model.ListSearchDataSet[searchDataSetIndex])));
+                                    </h4>
+                                </td>
+                            </tr>
+                        }
+                    }
+                }
+            </table>
+
+        </div>
+
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="https://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
-    </div>
-</div>
+    <table>
+        <tr>
+            <td>
+                @if ((Model != null)&&(Model.ListSearchDataSet != null))
+                {
+                <span style="height: 20px; line-height: 20px;">Total @Model.ListSearchDataSet.TotalItemCount.ToString() rekord，nuvarande @Model.ListSearchDataSet.PageNumber sida/total @Model.ListSearchDataSet.PageCount sidor </span>
+                    @Html.PagedListPager(Model.ListSearchDataSet, page => Url.Action("ExcuteNavigation", new { page,seaText= Model.searchViewModel.SearchText }), new PagedListRenderOptions() {  LinkToFirstPageFormat = "Första sidan", LinkToNextPageFormat = "Nästa", LinkToPreviousPageFormat = "Föregående", LinkToLastPageFormat = "Sista", DisplayItemSliceAndTotal = false, MaximumPageNumbersToDisplay = 10 })
+                }
+            </td>
+        </tr>
+    </table>
+

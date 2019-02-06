@@ -1,0 +1,460 @@
+﻿@model MPRTSearch.ViewModel.SPA.DetailViewModel
+@*PagedList.IPagedList<MPRTSearch.ViewModel.SPA.SearchResultViewModel>*@
+@using PagedList.Mvc;
+@{
+    /**/
+
+    ViewBag.Title = "detail";
+}
+<div>
+    <div class="row">
+        <div class="col-md-12">
+            
+            <table id="ResultTable" name="ResultTable" class="table" style="word-break:break-all; word-wrap:break-word;">
+                <tr><td colspan="2"><h3>kategori:&nbsp;@Model.TypeName&nbsp;
+                    @{ if (@Model.Number>0)
+                       {
+                       <span>nummer:@Model.Number</span>
+                       }
+                    }
+                     </h3></td></tr>
+                @{
+                    if ((Model.Column01Name != null) && (Model.Column01Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column01Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column01Value == null ? "" : Model.Column01Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column02Name != null) && (Model.Column02Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column02Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column02Value == null ? "" : Model.Column02Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column03Name != null) && (Model.Column03Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column03Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column03Value == null ? "" : Model.Column03Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column04Name != null) && (Model.Column04Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column04Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column04Value == null ? "" : Model.Column04Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column05Name != null) && (Model.Column05Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column05Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column05Value == null ? "" : Model.Column05Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column06Name != null) && (Model.Column06Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column06Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column06Value == null ? "" : Model.Column06Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column07Name != null) && (Model.Column07Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column07Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column07Value == null ? "" : Model.Column07Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column08Name != null) && (Model.Column08Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column08Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column08Value == null ? "" : Model.Column08Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column09Name != null) && (Model.Column09Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column09Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column09Value == null ? "" : Model.Column09Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column10Name != null) && (Model.Column10Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column10Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column10Value == null ? "" : Model.Column10Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column11Name != null) && (Model.Column11Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column11Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column11Value == null ? "" : Model.Column11Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column12Name != null) && (Model.Column12Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column12Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column12Value == null ? "" : Model.Column12Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column13Name != null) && (Model.Column13Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column13Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column13Value == null ? "" : Model.Column13Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column14Name != null) && (Model.Column14Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column14Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column14Value == null ? "" : Model.Column14Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column15Name != null) && (Model.Column15Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column15Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column15Value == null ? "" : Model.Column15Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column16Name != null) && (Model.Column16Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column16Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column16Value == null ? "" : Model.Column16Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column17Name != null) && (Model.Column17Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column17Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column17Value == null ? "" : Model.Column17Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column18Name != null) && (Model.Column18Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column18Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column18Value == null ? "" : Model.Column18Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column19Name != null) && (Model.Column19Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column19Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column19Value == null ? "" : Model.Column19Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column20Name != null) && (Model.Column20Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column20Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column20Value == null ? "" : Model.Column20Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column21Name != null) && (Model.Column21Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column21Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column21Value == null ? "" : Model.Column21Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column22Name != null) && (Model.Column22Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column22Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column22Value == null ? "" : Model.Column22Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column23Name != null) && (Model.Column23Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column23Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column23Value == null ? "" : Model.Column23Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column24Name != null) && (Model.Column24Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column24Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column24Value == null ? "" : Model.Column24Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column25Name != null) && (Model.Column25Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column25Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column25Value == null ? "" : Model.Column25Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column26Name != null) && (Model.Column26Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column26Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column26Value == null ? "" : Model.Column26Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column27Name != null) && (Model.Column27Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column27Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column27Value == null ? "" : Model.Column27Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column28Name != null) && (Model.Column28Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column28Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column28Value == null ? "" : Model.Column28Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column29Name != null) && (Model.Column29Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column29Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column29Value == null ? "" : Model.Column29Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column30Name != null) && (Model.Column30Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column30Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column30Value == null ? "" : Model.Column30Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column31Name != null) && (Model.Column31Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column31Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column31Value == null ? "" : Model.Column31Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column32Name != null) && (Model.Column32Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column32Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column32Value == null ? "" : Model.Column32Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column33Name != null) && (Model.Column33Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column33Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column33Value == null ? "" : Model.Column33Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column34Name != null) && (Model.Column34Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column34Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column34Value == null ? "" : Model.Column34Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column35Name != null) && (Model.Column35Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column35Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column35Value == null ? "" : Model.Column35Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column36Name != null) && (Model.Column36Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column36Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column36Value == null ? "" : Model.Column36Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column37Name != null) && (Model.Column37Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column37Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column37Value == null ? "" : Model.Column37Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column38Name != null) && (Model.Column38Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column38Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column38Value == null ? "" : Model.Column38Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    if ((Model.Column39Name != null) && (Model.Column39Name != "[okänd kolumn]"))
+                    {
+                        <tr>
+                            <td class="col-xs-4">
+                                <h4>@Model.Column39Name:</h4>
+                            </td>
+                            <td class="col-xs-8">
+                                <h5>@(Model.Column39Value == null ? "" : Model.Column39Value)</h5>
+                            </td>
+                        </tr>
+                    }
+                    
+
+
+                }
+
+            </table>
+            
+        </div>
+    </div>
+</div>

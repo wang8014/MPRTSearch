@@ -1,0 +1,54 @@
+﻿@using MPRTSearch.ViewModel.SPA
+@model NavigationViewModel
+<script>
+    function SearchByPage() {
+    }
+    function pnprev() {
+
+
+    }
+    function pnnext() {
+    }
+</script>
+
+@*<div class="row">
+    <div class="col-md-12">
+        <table>
+            <tr>
+                <td>
+                    @Html.EditorFor(model => model.PageIndex)
+                    <a class="pn" href="#" id="pnprev" onclick="pnprev();">
+                        <span class="csb ch" style="background-position:0 0;width:53px;float:right">
+                        </span>
+                        <span style="display:block;margin-right:35px;clear:right">Föregående&nbsp;&nbsp;</span>
+                    </a>
+                </td>
+                <td>
+                    @{
+                        for (int page = 1; page < (Model.TotalPage + 1); page++)
+                        {
+                            if (Model.PageIndex != page)
+                            {
+                                <a aria-label="Page @page" class="fl" href="/search">
+                                    &nbsp;<span class="csb ch" style="background-position:-74px 0;background-size:167px;width:20px"></span>
+                                    @page&nbsp;
+                                </a>
+                            }
+                            else
+                            {
+                                <span class="csb" style="background-position:-53px 0;background-size:167px;width:20px"></span>@page
+
+                            }
+                        }
+                    }
+                </td>
+                <td>
+                    <a class="pn" href="#" id="pnnext" onclick="pnnext();" style="text-align:left">
+                        <span class="csb ch" style="background-position:-96px 0;width:71px"></span>
+                        <span style="display:block;margin-left:53px">&nbsp;&nbsp;Nästa</span>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </div>
+</div>*@

@@ -9,7 +9,7 @@ namespace MPRTSearch.ViewModel.SPA
 {
     public class SearchViewModel 
     {
-        [StringLength(100, MinimumLength = 2, ErrorMessage = "sökord längd  bör vara mellan 2 och 100")]
+        [Required(ErrorMessage = "sökord bör inte vara tomt."),StringLength(100, MinimumLength = 2, ErrorMessage = "sökord längd  bör vara mellan 2 och 100")]
         public string SearchText { get; set; }
     }
 }

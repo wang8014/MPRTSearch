@@ -12,3 +12,5 @@ C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\EntityFramew
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DALClassLibrary.csproj.CopyComplete
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DAL.dll
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DAL.pdb
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\PagedList.dll
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\PagedList.xml
