@@ -17,7 +17,7 @@ namespace MPRTSearch.Areas.SPA.Controllers
         public BaseController()
         {
             _mainViewModel = new MainViewModel();
-            _mainViewModel.ApplicationName = "Unknown ApplicationName";
+            _mainViewModel.ApplicationName = "MPRT Register över sändningstillstånd 2000-2017";
             _mainViewModel.FooterData = new FooterViewModel();
 
             _mainViewModel.FooterData.CompanyName = "ArkivIT";//Can be set to dynamic value

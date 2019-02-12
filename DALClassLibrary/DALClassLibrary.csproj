@@ -52,6 +52,15 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DatabaseSettings.cs" />
+    <Compile Include="Migrations\201902071142002_Mike20190207.cs" />
+    <Compile Include="Migrations\201902071142002_Mike20190207.Designer.cs">
+      <DependentUpon>201902071142002_Mike20190207.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201902080912268_Mike20190208.cs" />
+    <Compile Include="Migrations\201902080912268_Mike20190208.Designer.cs">
+      <DependentUpon>201902080912268_Mike20190208.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="MPRTSearchDAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -64,6 +73,14 @@
       <Project>{c6de9bb7-6a87-4d24-80e5-3467608370c0}</Project>
       <Name>BusinessEntities</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201902071142002_Mike20190207.resx">
+      <DependentUpon>201902071142002_Mike20190207.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201902080912268_Mike20190208.resx">
+      <DependentUpon>201902080912268_Mike20190208.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -142,7 +142,9 @@
     <Compile Include="Areas\SPA\Controllers\DetailController.cs" />
     <Compile Include="Areas\SPA\Controllers\MainController.cs" />
     <Compile Include="Areas\SPA\SPAAreaRegistration.cs" />
+    <Compile Include="Controllers\ErrorController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Filters\ExceptionFilter.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -199,6 +201,8 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Compile Include="Logger\FileLogger.cs" />
+    <Content Include="images\loading1.jpg" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <Content Include="Areas\SPA\Views\web.config" />
@@ -207,6 +211,8 @@
     <Content Include="Areas\SPA\Views\Main\SearchInput.cshtml" />
     <Content Include="Areas\SPA\Views\Main\NavigationBar.cshtml" />
     <Content Include="Areas\SPA\Views\Detail\Index.cshtml" />
+    <Content Include="Areas\SPA\Views\Main\About.cshtml" />
+    <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
@@ -239,6 +245,7 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\Shared\Footer.cshtml" />
+    <Content Include="Views\Shared\DefaultIndex.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -246,6 +253,7 @@
     <Folder Include="Areas\SPA\Views\Base\" />
     <Folder Include="Areas\SPA\Views\Shared\" />
     <Folder Include="Models\" />
+    <Folder Include="Views\Error\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />

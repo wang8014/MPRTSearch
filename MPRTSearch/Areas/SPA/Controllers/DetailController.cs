@@ -451,54 +451,54 @@ namespace MPRTSearch.Areas.SPA.Controllers
                     detailViewModel.Column35Name = "[okänd kolumn]";
                     detailViewModel.Column35Value = data.Column35;
                 }
-                columnTable = ListColumnTable.Find(p => (p.TypeID == data.TypeID) && (p.Sorting == 36));
-                if (columnTable != null)
-                {
-                    columnName = columnTable.ColumnName;
-                    detailViewModel.Column36Name = columnName;
-                    detailViewModel.Column36Value = data.Column36;
-                }
-                else
-                {
-                    detailViewModel.Column36Name = "[okänd kolumn]";
-                    detailViewModel.Column36Value = data.Column36;
-                }
-                columnTable = ListColumnTable.Find(p => (p.TypeID == data.TypeID) && (p.Sorting == 37));
-                if (columnTable != null)
-                {
-                    columnName = columnTable.ColumnName;
-                    detailViewModel.Column37Name = columnName;
-                    detailViewModel.Column37Value = data.Column37;
-                }
-                else
-                {
-                    detailViewModel.Column37Name = "[okänd kolumn]";
-                    detailViewModel.Column37Value = data.Column37;
-                }
-                columnTable = ListColumnTable.Find(p => (p.TypeID == data.TypeID) && (p.Sorting == 38));
-                if (columnTable != null)
-                {
-                    columnName = columnTable.ColumnName;
-                    detailViewModel.Column38Name = columnName;
-                    detailViewModel.Column38Value = data.Column38;
-                }
-                else
-                {
-                    detailViewModel.Column38Name = "[okänd kolumn]";
-                    detailViewModel.Column38Value = data.Column38;
-                }
-                columnTable = ListColumnTable.Find(p => (p.TypeID == data.TypeID) && (p.Sorting == 39));
-                if (columnTable != null)
-                {
-                    columnName = columnTable.ColumnName;
-                    detailViewModel.Column39Name = columnName;
-                    detailViewModel.Column39Value = data.Column39;
-                }
-                else
-                {
-                    detailViewModel.Column39Name = "[okänd kolumn]";
-                    detailViewModel.Column39Value = data.Column39;
-                }
+                //columnTable = ListColumnTable.Find(p => (p.TypeID == data.TypeID) && (p.Sorting == 36));
+                //if (columnTable != null)
+                //{
+                //    columnName = columnTable.ColumnName;
+                //    detailViewModel.Column36Name = columnName;
+                //    detailViewModel.Column36Value = data.Column36;
+                //}
+                //else
+                //{
+                //    detailViewModel.Column36Name = "[okänd kolumn]";
+                //    detailViewModel.Column36Value = data.Column36;
+                //}
+                //columnTable = ListColumnTable.Find(p => (p.TypeID == data.TypeID) && (p.Sorting == 37));
+                //if (columnTable != null)
+                //{
+                //    columnName = columnTable.ColumnName;
+                //    detailViewModel.Column37Name = columnName;
+                //    detailViewModel.Column37Value = data.Column37;
+                //}
+                //else
+                //{
+                //    detailViewModel.Column37Name = "[okänd kolumn]";
+                //    detailViewModel.Column37Value = data.Column37;
+                //}
+                //columnTable = ListColumnTable.Find(p => (p.TypeID == data.TypeID) && (p.Sorting == 38));
+                //if (columnTable != null)
+                //{
+                //    columnName = columnTable.ColumnName;
+                //    detailViewModel.Column38Name = columnName;
+                //    detailViewModel.Column38Value = data.Column38;
+                //}
+                //else
+                //{
+                //    detailViewModel.Column38Name = "[okänd kolumn]";
+                //    detailViewModel.Column38Value = data.Column38;
+                //}
+                //columnTable = ListColumnTable.Find(p => (p.TypeID == data.TypeID) && (p.Sorting == 39));
+                //if (columnTable != null)
+                //{
+                //    columnName = columnTable.ColumnName;
+                //    detailViewModel.Column39Name = columnName;
+                //    detailViewModel.Column39Value = data.Column39;
+                //}
+                //else
+                //{
+                //    detailViewModel.Column39Name = "[okänd kolumn]";
+                //    detailViewModel.Column39Value = data.Column39;
+                //}
                 
                 
             }

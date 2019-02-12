@@ -80,13 +80,13 @@ namespace MPRTSearch.ViewModel.SPA
         public string Column34Value { get; set; }
         public string Column35Name { get; set; }
         public string Column35Value { get; set; }
-        public string Column36Name { get; set; }
-        public string Column36Value { get; set; }
-        public string Column37Name { get; set; }
-        public string Column37Value { get; set; }
-        public string Column38Name { get; set; }
-        public string Column38Value { get; set; }
-        public string Column39Name { get; set; }
-        public string Column39Value { get; set; }
+        //public string Column36Name { get; set; }
+        //public string Column36Value { get; set; }
+        //public string Column37Name { get; set; }
+        //public string Column37Value { get; set; }
+        //public string Column38Name { get; set; }
+        //public string Column38Value { get; set; }
+        //public string Column39Name { get; set; }
+        //public string Column39Value { get; set; }
     }
 }

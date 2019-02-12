@@ -3,3 +3,4 @@ C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessEntities\bin\Debug\BusinessEnt
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessEntities\obj\Debug\BusinessEntities.csproj.CoreCompileInputs.cache
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessEntities\obj\Debug\BusinessEntities.dll
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessEntities\obj\Debug\BusinessEntities.pdb
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\BusinessEntities\obj\Debug\BusinessEntities.csprojAssemblyReference.cache

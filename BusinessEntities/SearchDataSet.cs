@@ -47,10 +47,10 @@ namespace MPRTSearch.BusinessEntities
         public string Column33 { get; set; }
         public string Column34 { get; set; }
         public string Column35 { get; set; }
-        public string Column36 { get; set; }
-        public string Column37 { get; set; }
-        public string Column38 { get; set; }
-        public string Column39 { get; set; }
+        //public string Column36 { get; set; }
+        //public string Column37 { get; set; }
+        //public string Column38 { get; set; }
+        //public string Column39 { get; set; }
 
     }
 }

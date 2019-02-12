@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="DBString-Web.config Connection String" description="DBString Connection String used in web.config by the application to access the database." defaultValue="Data Source=DESKTOP-1B6DOEO\MIKESQLEXPRESS;Initial Catalog=SearchDB;Integrated Security=True;User ID=sa;Password=mikesqlexpress" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="C:\\Users\\mike\\mikeproj\\GitRepo\\MPRTSearch\\MPRTSearch\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DBString']/@connectionString" />
+  </parameter>
+</parameters>

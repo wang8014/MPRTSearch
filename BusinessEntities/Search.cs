@@ -33,6 +33,8 @@ namespace MPRTSearch.BusinessEntities
                 return listSearchText;
             }
         }
+        public int TypeId { get; set; }
+        public bool LogicAnd { get; set; }
         public Navigation navigation { get; set; }
         public Search()
         {

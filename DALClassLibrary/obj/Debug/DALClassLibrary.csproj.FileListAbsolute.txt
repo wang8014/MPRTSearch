@@ -14,3 +14,6 @@ C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DAL.dll
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DAL.pdb
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\PagedList.dll
 C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\bin\Debug\PagedList.xml
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\MPRTSearch.DAL.Migrations.Mike20190207.resources
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\DALClassLibrary.csproj.GenerateResource.cache
+C:\Users\mike\mikeproj\GitRepo\MPRTSearch\DALClassLibrary\obj\Debug\MPRTSearch.DAL.Migrations.Mike20190208.resources

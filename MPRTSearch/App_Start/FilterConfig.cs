@@ -1,5 +1,6 @@
 ﻿using System.Web;
 using System.Web.Mvc;
+using MPRTSearch.Filters;
 
 namespace MPRTSearch
 {
@@ -7,7 +8,8 @@ namespace MPRTSearch
     {
         public static void RegisterGlobalFilters(GlobalFilterCollection filters)
         {
-            filters.Add(new HandleErrorAttribute());
+            //filters.Add(new HandleErrorAttribute());
+            filters.Add(new ExceptionFilter());
         }
     }
 }

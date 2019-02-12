@@ -70,12 +70,12 @@ namespace MPRTSearch.BusinessLayer
         public List<TypeTable> GetTypeTable()
         {
             MPRTSearchDAL mprtDal = new MPRTSearchDAL();
-            return mprtDal.Set<TypeTable>().ToList();
+            return mprtDal.Set<TypeTable>().Where(m=>m.Enabled==true).ToList();
         }
         public List<ColumnTable> GetColumnTable()
         {
             MPRTSearchDAL mprtDal = new MPRTSearchDAL();
-            return mprtDal.Set<ColumnTable>().ToList();
+            return mprtDal.Set<ColumnTable>().Where(m => m.Enabled == true).ToList();
         }
         //private Expression<Func<SearchDataSet, bool>> whereLambdaLogicAnd()
         //{
@@ -130,10 +130,10 @@ namespace MPRTSearch.BusinessLayer
                 || p.Column33.Contains(search.SearchText)
                 || p.Column34.Contains(search.SearchText)
                 || p.Column35.Contains(search.SearchText)
-                || p.Column36.Contains(search.SearchText)
-                || p.Column37.Contains(search.SearchText)
-                || p.Column38.Contains(search.SearchText)
-                || p.Column39.Contains(search.SearchText)
+                //|| p.Column36.Contains(search.SearchText)
+                //|| p.Column37.Contains(search.SearchText)
+                //|| p.Column38.Contains(search.SearchText)
+                //|| p.Column39.Contains(search.SearchText)
                 )
                 ;
         
@@ -150,17 +150,44 @@ namespace MPRTSearch.BusinessLayer
             MPRTSearchDAL mprtDal = new MPRTSearchDAL();
             int totalPage = 0;
             int recordCount = 0;
-            var data = GetPagePro("SearchDataSet", "*", "Id", GetWhereSqlWithAnd(search), navigation.PageSize, navigation.PageIndex, out totalPage, out recordCount);
+            var data = GetPagePro("SearchDataSet", "*", "Id", GetWhereSql(search), navigation.PageSize, navigation.PageIndex, out totalPage, out recordCount);
             var studentList = new StaticPagedList<SearchDataSet>(data, navigation.PageIndex, navigation.PageSize, recordCount);
             return studentList;//mprtDal.Set<SearchDataSet>().Where(whereLambdaLogicAnd(search)).OrderBy(p => p.ID).ToPagedList(navigation.PageIndex, navigation.PageSize);
 
         }
-        private string GetWhereSqlWithAnd(Search search)
+
+        private string GetWhereSql(Search search)
         {
             string rtn = "([Enabled]=1)";
-            foreach(string item in search.ListSearchText)
+            if(search.TypeId>0)
+            { rtn = rtn + "and TypeId=" + search.TypeId.ToString() + " ";  }
+            if (search.ListSearchText.Count>0)
             {
-                rtn = rtn + "and ((Column01 like '%" + item + "%')or";
+                rtn = rtn + " and (";
+            }
+
+            for (int i=0 ; i < search.ListSearchText.Count;i++)
+            {
+                string item = search.ListSearchText[i];
+                if (search.LogicAnd)
+                {
+                    if (i > 0)
+                    {
+                        rtn = rtn + "and ((Column01 like '%" + item + "%')or";
+                    }
+                    else { rtn = rtn + "((Column01 like '%" + item + "%')or"; }
+                }
+                else
+                {
+                    if (i > 0)
+                    { rtn = rtn + "or ((Column01 like '%" + item + "%')or"; }
+                    else
+                    {
+                        rtn = rtn + "((Column01 like '%" + item + "%')or";
+                    }
+                }      
+
+
                 rtn = rtn + "(Column02 like '%" + item + "%')or";
                 rtn = rtn + "(Column03 like '%" + item + "%')or";
                 rtn = rtn + "(Column04 like '%" + item + "%')or";
@@ -194,63 +221,20 @@ namespace MPRTSearch.BusinessLayer
                 rtn = rtn + "(Column32 like '%" + item + "%')or";
                 rtn = rtn + "(Column33 like '%" + item + "%')or";
                 rtn = rtn + "(Column34 like '%" + item + "%')or";
-                rtn = rtn + "(Column35 like '%" + item + "%')or";
-                rtn = rtn + "(Column36 like '%" + item + "%')or";
-                rtn = rtn + "(Column37 like '%" + item + "%')or";
-                rtn = rtn + "(Column38 like '%" + item + "%')or";
-                rtn = rtn + "(Column39 like '%" + item + "%')";
+                rtn = rtn + "(Column35 like '%" + item + "%')";
+                //rtn = rtn + "(Column36 like '%" + item + "%')or";
+                //rtn = rtn + "(Column37 like '%" + item + "%')or";
+                //rtn = rtn + "(Column38 like '%" + item + "%')or";
+                //rtn = rtn + "(Column39 like '%" + item + "%')";
                 rtn = rtn + ")";
             }
-            return rtn;
-        }
-        private string GetWhereSqlWithOr(Search search)
-        {
-            string rtn = "(1=1)";
-            foreach (string item in search.ListSearchText)
+            if (search.ListSearchText.Count > 0)
             {
-                rtn = rtn + "or ((Column01 like '%" + item + "%')or";
-                rtn = rtn + "(Column02 like '%" + item + "%')or";
-                rtn = rtn + "(Column03 like '%" + item + "%')or";
-                rtn = rtn + "(Column04 like '%" + item + "%')or";
-                rtn = rtn + "(Column05 like '%" + item + "%')or";
-                rtn = rtn + "(Column06 like '%" + item + "%')or";
-                rtn = rtn + "(Column07 like '%" + item + "%')or";
-                rtn = rtn + "(Column08 like '%" + item + "%')or";
-                rtn = rtn + "(Column09 like '%" + item + "%')or";
-                rtn = rtn + "(Column10 like '%" + item + "%')or";
-                rtn = rtn + "(Column11 like '%" + item + "%')or";
-                rtn = rtn + "(Column12 like '%" + item + "%')or";
-                rtn = rtn + "(Column13 like '%" + item + "%')or";
-                rtn = rtn + "(Column14 like '%" + item + "%')or";
-                rtn = rtn + "(Column15 like '%" + item + "%')or";
-                rtn = rtn + "(Column16 like '%" + item + "%')or";
-                rtn = rtn + "(Column17 like '%" + item + "%')or";
-                rtn = rtn + "(Column18 like '%" + item + "%')or";
-                rtn = rtn + "(Column19 like '%" + item + "%')or";
-                rtn = rtn + "(Column20 like '%" + item + "%')or";
-                rtn = rtn + "(Column21 like '%" + item + "%')or";
-                rtn = rtn + "(Column22 like '%" + item + "%')or";
-                rtn = rtn + "(Column23 like '%" + item + "%')or";
-                rtn = rtn + "(Column24 like '%" + item + "%')or";
-                rtn = rtn + "(Column25 like '%" + item + "%')or";
-                rtn = rtn + "(Column26 like '%" + item + "%')or";
-                rtn = rtn + "(Column27 like '%" + item + "%')or";
-                rtn = rtn + "(Column28 like '%" + item + "%')or";
-                rtn = rtn + "(Column29 like '%" + item + "%')or";
-                rtn = rtn + "(Column30 like '%" + item + "%')or";
-                rtn = rtn + "(Column31 like '%" + item + "%')or";
-                rtn = rtn + "(Column32 like '%" + item + "%')or";
-                rtn = rtn + "(Column33 like '%" + item + "%')or";
-                rtn = rtn + "(Column34 like '%" + item + "%')or";
-                rtn = rtn + "(Column35 like '%" + item + "%')or";
-                rtn = rtn + "(Column36 like '%" + item + "%')or";
-                rtn = rtn + "(Column37 like '%" + item + "%')or";
-                rtn = rtn + "(Column38 like '%" + item + "%')or";
-                rtn = rtn + "(Column39 like '%" + item + "%')";
                 rtn = rtn + ")";
             }
             return rtn;
         }
+        
         public SearchDataSet GetSearchDataSet(int Id)
         {
             MPRTSearchDAL mprtDal = new MPRTSearchDAL();
