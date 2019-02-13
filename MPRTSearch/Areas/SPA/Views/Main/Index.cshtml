@@ -38,7 +38,10 @@
                     {
                         <tr>
                             <td class="col-xs-12">
-                                <h3><a class="btn-link" href="/SPA/Detail/Index/@Model.ListSearchDataSet[searchDataSetIndex].ID.ToString()?nm=@Model.GetRowId(Model.ListSearchDataSet.PageNumber,Model.ListSearchDataSet.PageSize,searchDataSetIndex)">@Model.GetRowId(Model.ListSearchDataSet.PageNumber, Model.ListSearchDataSet.PageSize, searchDataSetIndex)&nbsp;&nbsp;kategori:&nbsp;@Model.GetTypeName(Model.ListSearchDataSet[searchDataSetIndex].TypeID)&nbsp;</a></h3>
+                                <h3>
+                                    @Html.ActionLink(Model.GetRowId(Model.ListSearchDataSet.PageNumber, Model.ListSearchDataSet.PageSize, searchDataSetIndex).ToString()+"  kategori: " +Model.GetTypeName(Model.ListSearchDataSet[searchDataSetIndex].TypeID) +  " ", "Index", "Detail", new { area = "SPA",id= Model.ListSearchDataSet[searchDataSetIndex].ID.ToString() ,nm=Model.GetRowId(Model.ListSearchDataSet.PageNumber, Model.ListSearchDataSet.PageSize, searchDataSetIndex) }, new { @class = "btn-link" })
+                                    @*<a class="btn-link" href="/SPA/Detail/Index/@Model.ListSearchDataSet[searchDataSetIndex].ID.ToString()?nm=@Model.GetRowId(Model.ListSearchDataSet.PageNumber,Model.ListSearchDataSet.PageSize,searchDataSetIndex)">@</a>*@
+                                </h3>
                                 <h4>
                                     @(new HtmlString(Model.GetRowData(Model.ListSearchDataSet[searchDataSetIndex])));
                                 </h4>
