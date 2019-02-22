@@ -450,6 +450,7 @@ namespace MPRTSearch.Areas.SPA.Controllers
                 {
                     detailViewModel.Column35Name = "[okänd kolumn]";
                     detailViewModel.Column35Value = data.Column35;
+
                 }
                 //columnTable = ListColumnTable.Find(p => (p.TypeID == data.TypeID) && (p.Sorting == 36));
                 //if (columnTable != null)

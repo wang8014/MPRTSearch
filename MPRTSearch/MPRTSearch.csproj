@@ -213,6 +213,7 @@
     <Content Include="Areas\SPA\Views\Detail\Index.cshtml" />
     <Content Include="Areas\SPA\Views\Main\About.cshtml" />
     <None Include="Properties\PublishProfiles\CustomProfile.pubxml" />
+    <None Include="Properties\PublishProfiles\CustomProfile1.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.12.4.js" />
     <Content Include="Scripts\jquery-3.1.1.js" />
